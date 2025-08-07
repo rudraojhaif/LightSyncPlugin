@@ -1,3 +1,14 @@
+// Copyright (c) 2025 Rudra Ojha
+// All rights reserved.
+//
+// This source code is provided for educational and reference purposes only.
+// Redistribution, modification, or use of this code in any commercial or private
+// product is strictly prohibited without explicit written permission from the author.
+//
+// Unauthorized use in any software or plugin distributed to end-users,
+// whether open-source or commercial, is not allowed.
+//
+// Contact: rudraojhaif@gmail.com for licensing inquiries.
 // LightSyncPluginPlugIn.h : main header file for the LightSyncPlugin plug-in.
 //
 
@@ -25,7 +36,12 @@ public:
   ~CLightSyncPluginPlugIn() = default;
 
   // Required overrides
-  
+
+  // Load the plugin at startup
+  CRhinoPlugIn::plugin_load_time CLightSyncPluginPlugIn::PlugInLoadTime()
+  {
+	  return CRhinoPlugIn::load_plugin_at_startup;
+  }
   // Plug-in name display string. This name is displayed by Rhino when
   // loading the plug-in, in the plug-in help menu, and in the Rhino
   // interface for managing plug-ins. 
