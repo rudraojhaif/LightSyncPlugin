@@ -1,8 +1,5 @@
-# Ignore everything in .vs
 .vs/
-
-# Ignore everything in x64 recursively
-x64/**
-
-# Re-include only .rhp files in x64/Debug
+x64/*
+!x64/Debug/
+x64/Debug/*
 !x64/Debug/*.rhp
