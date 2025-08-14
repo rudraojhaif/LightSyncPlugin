@@ -150,8 +150,8 @@ While Datasmith provides built-in light synchronization, this plugin offers:
 
 ## System Requirements
 
-- **Rhino**: 6.0 or later
-- **Unreal Engine**: 4.27+ or UE5
+- **Rhino**: 8.0
+- **Unreal Engine**: UE5.4+
 - **Operating System**: Windows (Winsock2 required)
 - **Network**: TCP/IP stack enabled
 
